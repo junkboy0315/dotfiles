@@ -1,0 +1,13 @@
+[user]
+	name = Shota Tamura
+	email = tamura@yuuniworks.com
+[alias]
+	l = log --oneline --graph --decorate --branches --remotes --tags --graph
+	c = commit
+	cm = commit -m
+	s = status
+	a = add
+	ap = add -p
+  d = diff -b
+  ds = diff -b --staged
+  prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d

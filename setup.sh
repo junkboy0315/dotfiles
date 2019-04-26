@@ -1,6 +1,10 @@
 #!/bin/bash
 
-DOT_FILES=( .gitconfig )
+DOT_FILES=( 
+    .bash_profile
+    .gitconfig
+    .hyper.js
+)
 
 for file in ${DOT_FILES[@]}
 do
