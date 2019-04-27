@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=( 
+DOT_FILES=(
     .gitconfig
     .hyper.js
     .zshrc
