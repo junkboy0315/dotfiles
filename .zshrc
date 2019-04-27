@@ -9,7 +9,7 @@ eval "$(pyenv init -)" # enable autocompletion
 
 # zsh
 bindkey "\e[3~" delete-char # enable fn + delete
-PROMPT="%f%F{green}%d%f %% "
+PROMPT="%d %% "
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
