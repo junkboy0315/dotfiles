@@ -6,3 +6,16 @@ export NVM_DIR="$HOME/.nvm"
 # pyenv
 export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
 eval "$(pyenv init -)" # enable autocompletion
+
+# zsh
+bindkey "\e[3~" delete-char # enable fn + delete
+PROMPT="%f%F{green}%d%f %% "
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+RPROMPT='${vcs_info_msg_0_}'
