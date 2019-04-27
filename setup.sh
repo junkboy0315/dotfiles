@@ -1,9 +1,9 @@
 #!/bin/bash
 
 DOT_FILES=( 
-    .bash_profile
     .gitconfig
     .hyper.js
+    .zshrc
 )
 
 for file in ${DOT_FILES[@]}
