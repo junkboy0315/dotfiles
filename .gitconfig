@@ -10,4 +10,5 @@
 	ap = add -p
   d = diff -b
   ds = diff -b --staged
+  dw = diff --word-diff-regex='\\w+'
   prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d
