@@ -7,6 +7,9 @@ export NVM_DIR="$HOME/.nvm"
 export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
 eval "$(pyenv init -)" # enable autocompletion
 
+# pipenv
+export PIPENV_VENV_IN_PROJECT=true # make venv folder into the project folder instead of user folder
+
 # zsh
 # enable fn + delete
 bindkey "\e[3~" delete-char
