@@ -1,6 +1,7 @@
 [user]
 	name = Shota Tamura
 	email = tamura@yuuniworks.com
+	signingkey = 883DAC57AABD43C3
 [alias]
 	l = log --oneline --graph --decorate --branches --remotes --tags --graph
 	c = commit
@@ -12,3 +13,7 @@
   ds = diff -b --staged
   dw = diff --word-diff-regex='\\w+'
   prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -p -L 1 git branch -D
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
