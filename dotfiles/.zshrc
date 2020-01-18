@@ -24,12 +24,6 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT='${vcs_info_msg_0_}'
-# use pushd
-setopt auto_pushd
-setopt pushd_ignore_dups
-# colorify ls
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagacad
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shota/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/path.zsh.inc'; fi
