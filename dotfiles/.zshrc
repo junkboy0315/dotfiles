@@ -14,7 +14,7 @@ export PIPENV_VENV_IN_PROJECT=true # make venv folder into the project folder in
 # enable fn + delete
 bindkey "\e[3~" delete-char
 # show git branch status
-PROMPT="%d %% "
+PROMPT="%~ %% "
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
