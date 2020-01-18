@@ -6,7 +6,8 @@ DOT_FILES=(
     .zshrc
 )
 
-for file in ${DOT_FILES[@]}
+cd dotfiles
+for file in `ls .[^.]*`
 do
-    ln -s $HOME/github/dotfiles/$file $HOME/$file
+  ln -s $HOME/github/dotfiles/dotfiles/$file $HOME/$file
 done
