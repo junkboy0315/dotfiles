@@ -39,3 +39,8 @@ if [ -f '/Users/shota/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sho
 
 # flutter
 export PATH="$PATH:/Users/shota/flutter/bin"
+
+# Prezto
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
