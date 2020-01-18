@@ -36,3 +36,6 @@ if [ -f '/Users/shota/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shota/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/shota/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/completion.zsh.inc'; fi
+
+# flutter
+export PATH="$PATH:/Users/shota/flutter/bin"
