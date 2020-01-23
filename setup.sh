@@ -13,6 +13,17 @@
 )
 
 #
+# karabiner
+#
+
+if [ ! -e ~/.config/karabiner ]; then
+  script_dir=$(cd $(dirname $0); pwd)
+  ln -s "$script_dir/karabiner" ~/.config/karabiner
+else
+  echo "karabiner config folder already exists" >&2
+fi
+
+#
 # brew
 #
 
@@ -76,9 +87,3 @@ done
 
 brew cleanup
 brew cask cleanup
-
-#
-# karabiner
-#
-script_dir=$(cd $(dirname $0); pwd)
-ln -s "$script_dir/karabiner" ~/.config/karabiner
