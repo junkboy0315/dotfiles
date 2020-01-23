@@ -80,4 +80,5 @@ brew cask cleanup
 #
 # karabiner
 #
-ln -s "$(pwd)/karabiner" ~/.config/karabiner
+script_dir=$(cd $(dirname $0); pwd)
+ln -s "$script_dir/karabiner" ~/.config/karabiner
