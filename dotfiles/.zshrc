@@ -27,3 +27,5 @@ export PATH="$PATH:/Users/shota/flutter/bin"
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+# override default `glg` command to make it more pretty
+alias glg='git log --topo-order --all --graph --oneline'
