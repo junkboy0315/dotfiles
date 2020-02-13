@@ -74,7 +74,6 @@ cask_formulas=(
   logitech-control-center
   mysqlworkbench
   postman
-  scroll-reverser # to use the mouse and the trackpad at a time
   spotify
   tripmode
   visual-studio-code
