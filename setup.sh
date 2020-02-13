@@ -67,7 +67,6 @@ cask_formulas=(
   google-japanese-ime
   hyper
   i1profiler
-  iterm2
   karabiner-elements
   kindle
   licecap
