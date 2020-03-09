@@ -74,6 +74,7 @@ cask_formulas=(
   mysqlworkbench
   postman
   spotify
+  tableplus
   tripmode
   visual-studio-code
 )
