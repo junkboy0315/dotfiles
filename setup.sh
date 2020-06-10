@@ -24,6 +24,17 @@ else
 fi
 
 #
+# mypy
+#
+
+if [ ! -e ~/.config/mypy ]; then
+  script_dir=$(cd $(dirname $0); pwd)
+  ln -s "$script_dir/mypy" ~/.config/mypy
+else
+  echo "mypy config folder already exists" >&2
+fi
+
+#
 # brew
 #
 
