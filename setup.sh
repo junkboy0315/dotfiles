@@ -64,6 +64,7 @@ done
 
 cask_formulas=(
   adobe-creative-cloud
+  altair-graphql-client
   android-studio
   bettertouchtool
   corretto
