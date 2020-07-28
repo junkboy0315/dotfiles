@@ -29,3 +29,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 # override default `glg` command to make it more pretty
 alias glg='git log --topo-order --graph --oneline --branches'
+
+# Golang
+export PATH="$PATH:/Users/shota/go/bin"
