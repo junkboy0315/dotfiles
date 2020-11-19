@@ -47,7 +47,6 @@ brew update
 brew tap homebrew/cask-fonts
 
 formulas=(
-  circleci
   git
   go
   gpg
@@ -64,26 +63,20 @@ done
 
 cask_formulas=(
   adobe-creative-cloud
-  altair-graphql-client
-  android-studio
   bettertouchtool
   corretto
-  dbeaver-community
   docker
   firefox
-  font-fira-code
+  font-cascadia-code
   font-source-han-code-jp
   gitkraken
   google-chrome
   google-drive-file-stream
-  google-japanese-ime
-  hyper
   i1profiler
   karabiner-elements
   kindle
   licecap
-  logitech-control-center
-  mysqlworkbench
+  logitech-options
   postman
   spotify
   tableplus
@@ -97,4 +90,3 @@ for cask_formula in "${cask_formulas[@]}"; do
 done
 
 brew cleanup
-brew cask cleanup
