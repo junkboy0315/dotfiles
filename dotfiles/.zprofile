@@ -66,3 +66,9 @@ fi
 # rust
 #
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#
+# MacPorts
+#
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export DISPLAY=:0
