@@ -32,3 +32,8 @@ alias glg='git log --topo-order --graph --oneline --branches'
 
 # Golang
 export PATH="$PATH:/Users/shota/go/bin"
+
+# Homebrew
+# - /opt/homebrew/bin # arm64
+# - /usr/local/bin # x86
+export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
