@@ -1,8 +1,3 @@
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 # pyenv
 export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
 eval "$(pyenv init -)" # enable autocompletion
@@ -37,3 +32,6 @@ export PATH="$PATH:/Users/shota/go/bin"
 # - /opt/homebrew/bin # arm64
 # - /usr/local/bin # x86
 export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
+
+# nodenv
+eval "$(nodenv init -)"
