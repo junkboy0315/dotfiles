@@ -1,9 +1,17 @@
-# pyenv
-export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
-eval "$(pyenv init -)" # enable autocompletion
+# Homebrew
+# - /opt/homebrew/bin # arm64
+# - /usr/local/bin # x86
+export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
+
+# nodenv
+eval "$(nodenv init -)"
 
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true # make venv folder into the project folder instead of user folder
+
+# pyenv
+export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
+eval "$(pyenv init -)" # enable autocompletion
 
 # zsh
 # enable fn + delete
@@ -27,11 +35,3 @@ alias glg='git log --topo-order --graph --oneline --branches'
 
 # Golang
 export PATH="$PATH:/Users/shota/go/bin"
-
-# Homebrew
-# - /opt/homebrew/bin # arm64
-# - /usr/local/bin # x86
-export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
-
-# nodenv
-eval "$(nodenv init -)"
