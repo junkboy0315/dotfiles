@@ -8,3 +8,5 @@
 # 	program = gpg
 # [commit]
 # 	gpgsign = true
+[core]
+	editor = vi
