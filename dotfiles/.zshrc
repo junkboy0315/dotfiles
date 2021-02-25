@@ -17,12 +17,6 @@ eval "$(pyenv init -)" # enable autocompletion
 # enable fn + delete
 bindkey "\e[3~" delete-char
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/shota/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/shota/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/completion.zsh.inc'; fi
-
 # flutter
 export PATH="$PATH:/Users/shota/flutter/bin"
 
@@ -39,3 +33,8 @@ export PATH="$PATH:/Users/shota/go/bin"
 # Terraform
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# gcloud cli
+CLOUDSDK_PYTHON=python3
+if [ -f '/Users/shota/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/shota/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/completion.zsh.inc'; fi
