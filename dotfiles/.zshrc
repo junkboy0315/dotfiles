@@ -35,3 +35,7 @@ alias glg='git log --topo-order --graph --oneline --branches'
 
 # Golang
 export PATH="$PATH:/Users/shota/go/bin"
+
+# Terraform
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
