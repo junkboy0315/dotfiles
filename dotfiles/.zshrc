@@ -11,7 +11,9 @@ export PIPENV_VENV_IN_PROJECT=true # make venv folder into the project folder in
 
 # pyenv
 export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
-eval "$(pyenv init -)" # enable autocompletion
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)" # Load pyenv into the shell
 
 # zsh
 # enable fn + delete
