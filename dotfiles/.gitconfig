@@ -10,3 +10,5 @@
 # 	gpgsign = true
 [core]
 	editor = vi
+[init]
+	defaultBranch = main
