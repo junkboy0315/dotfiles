@@ -4,16 +4,16 @@
 export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
 
 # nodenv
-eval "$(nodenv init -)"
+# eval "$(nodenv init -)"
 
 # pipenv
-export PIPENV_VENV_IN_PROJECT=true # make venv folder into the project folder instead of user folder
+# export PIPENV_VENV_IN_PROJECT=true # make venv folder into the project folder instead of user folder
 
 # pyenv
-export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)" # Load pyenv into the shell
+# export PYENV_ROOT="/usr/local/var/pyenv" # save downloaded binaries into this folder
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv init -)" # Load pyenv into the shell
 
 # zsh
 # enable fn + delete
