@@ -41,6 +41,9 @@ CLOUDSDK_PYTHON=python3
 if [ -f '/Users/shota/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/shota/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shota/google-cloud-sdk/completion.zsh.inc'; fi
 
+# gitのブランチ名に#を入れるとコンソールで警告が出る問題を回避
+setopt NO_EXTENDED_GLOB
+
 # volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
