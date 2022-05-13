@@ -52,3 +52,8 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
+
+# pnpm
+export PNPM_HOME="/Users/shota/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
