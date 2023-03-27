@@ -11,6 +11,7 @@
 [core]
 	editor = vi
 	excludesfile = /Users/shota/.gitignore_global
+	autocrlf = input
 [init]
 	defaultBranch = main
 [difftool "sourcetree"]
@@ -21,3 +22,8 @@
 	trustExitCode = true
 [commit]
 	template = /Users/shota/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
