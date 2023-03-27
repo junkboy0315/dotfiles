@@ -14,6 +14,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# poetry
+export PATH="/Users/shota/.local/bin:$PATH"
+
 # zsh
 # enable fn + delete
 bindkey "\e[3~" delete-char
